@@ -141,5 +141,5 @@ echo -e "| ' /   / _ \ \___ \| |_) |  _| | |_) |    | | | |_) |  \e[36m"
 echo -e "| . \  / ___ \ ___) |  __/| |___|  _ <     | | |  __/   \e[36m"
 echo -e "|_|\_\/_/   \_\____/|_|   |_____|_| \_\    |_| |_|      \e[36m"
 echo -e "                                                        \e[36m"
-  ./tg/bin/telegram-cli -k ./tg/tg-server.pub -s ./bot/devpoint.lua -l 1 -E $@
+  ./tg/bin/telegram-cli -k ./tg/tg-server.pub -s ./bot/TPBOT.lua -l 1 -E $@
 fi

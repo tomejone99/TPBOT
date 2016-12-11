@@ -28,16 +28,16 @@ if matches[1]== "info" then
 .."🔱➖➖➖➖➖➖➖➖➖➖🔱".."\n"
 return text
  end 
- if matches[1]== "info" then
+ if matches[1]== "معلوماتي" then
    local text = "Hi my love☺️🌹".."\n"
 .."🔱➖➖➖➖➖➖➖➖➖➖🔱".."\n"
-.."Your name»"..result.from.first_name.."\n"
-.."Your user» @"..(result.from.username or ' ').."\n"
-.."Your phone»"..(result.from.phone or ' ').."\n"
-.."Your ID»"..result.from.id.."\n"
-.."GP ID»"..(msg.to.id or ' ').."\n"
-.."GP name»"..(msg.to.title or ' ').."\n"
-.."TIME»"..os.date('%B, %d, %Y\n', timestamp)
+.."🔠اسمك»"..msg.from.first_name.."\n"
+.."🔡معرفك» @"..(msg.from.username or ' ').."\n"
+.."🔢رقمك»"..(msg.from.phone or ' ').."\n"
+.."🆔ايديك»"..msg.from.id.."\n"
+.."🆔ايدي المجموعه»"..(msg.to.id or ' ').."\n"
+.."🆎اسم المجموعه»"..(msg.to.title or ' ').."\n"
+.."📆التاريخ»"..os.date('%B, %d, %Y\n', timestamp)
 .."🔱➖➖➖➖➖➖➖➖➖➖🔱".."\n"
 return text
 end
@@ -45,6 +45,7 @@ end
   return  { 
     patterns = { 
       "^[!/#](info)$",
+      "^(معلوماتي)$",
 }, 
   run = run
 } 
